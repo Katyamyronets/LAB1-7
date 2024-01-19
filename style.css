@@ -1,0 +1,279 @@
+html{
+    text-decoration: none;
+}
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 0;
+}
+.menu-lab{
+    padding-inline-start: 0;
+}
+
+.centered {
+    flex: 1;
+}
+
+#student-photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 9%; 
+    height: auto; 
+}
+
+@media (max-width: 768px) {
+    header {
+    flex-direction: column;
+    text-align: center;
+    }
+
+    #student-photo {
+    margin-left: 0;
+    margin-top: 10px;
+    order: 2;
+    }
+}
+
+.lab-btn{
+    text-align: center;
+    display: inline-block;
+    padding: 3px;
+    min-height: 2.5em;
+    width: 10%;
+    border: solid 1px;
+    border-radius: 8px;
+}
+#lab-btn-section{
+    text-align: center;
+    text-decoration: none;
+}
+
+#main-section{
+    padding-top: 10px;  
+}
+
+#information-span{
+    float: right;
+    height: 60%;
+    min-height: 500px;
+    width: 70%;
+    margin-right: 1%;
+    border: 2px solid black;
+}
+
+.menu-btn, .menu-no-click{
+    display: inline-block;
+    width: 100%;
+    border: solid 1px;
+    border-radius: 10px;
+    height: 2.5em;
+    margin: 2px;
+    text-decoration: none;
+}
+
+#menu-lab-container{
+    position: relative;
+    width: 27%;
+    float: left;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+    min-height: 2.5em;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+li{
+    list-style-type: none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.striped-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.striped-table th, .striped-table td {
+    border: 3px solid #000000;
+    padding: 8px;
+    text-align: left;
+}
+
+.striped-table th {
+    background-color: #ffffff;
+    font-weight: bold;
+}
+
+
+.striped-table tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+
+.striped-table tr:nth-child(odd) {
+    background-color: rgb(120, 156, 120); 
+}
+
+/* Зображення */
+.match-photo{
+    max-width: 20%;
+}
+#photo-div{
+    display: block;
+    text-align: center;
+}
+.photos{
+    max-width: 100%;
+    display: block;
+    text-align: center;
+}
+.photo{
+    max-width: 40%;
+}
+
+/* Форма */
+
+.form-el {
+    
+    max-width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+       
+    
+   
+}
+
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  
+}
+
+
+button {
+    background-color: #03340d;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+input:required:invalid {
+    border-color: red;
+}
+/* Список */
+#squad-list{
+    margin-left: 15%;
+    display: inline-block;
+    text-align: left;
+    background-color: #eef1fd;
+    padding: 5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+}
+#squad-list li{
+    padding: 0.3rem;
+    border-bottom: solid gray 1px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    
+   
+}
+.block {
+    flex: 1;
+    width: calc(33.33% - 20px); 
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+#flower-info {
+    border: 10px solid #000; 
+    padding: 10px; 
+    display: inline-block;
+   
+}
+#flower-info .highlight-text {
+    background-color: rgb(237, 213, 217); 
+    padding: 30px; 
+}
+
+
+#store-info {
+    border: 10px solid #000; 
+    padding: 10px;  
+    display: inline-block;
+}
+#store-info .highlight-texts {
+    background-color: rgb(153, 213, 138); 
+    padding: 30px; 
+}
+#description-info{
+    border: 10px solid #000; 
+    padding: 10px; 
+    display: inline-block;
+}
+#description-info .highlight-textss{
+    background-color: rgb(147, 215, 229); 
+    padding: 30px; 
+}
+
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
+.info-element hidden {
+    display: inline-block;
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.nav-item a:hover {
+    background-color: #afbceb;
+}
+
+.hidden{
+    display: none;
+}
